@@ -2,32 +2,23 @@
 
 ![Python](https://img.shields.io/badge/python-3.13+-blue.svg)
 ![OR-Tools](https://img.shields.io/badge/Library-OR--Tools-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 Este projeto utiliza **Programação Linear Inteira (PLI)** para resolver o problema clássico de corte de barras. O sistema calcula a melhor forma de cortar barras de tamanho padrão para atender a uma demanda específica, focando na eficiência produtiva.
 
-## 👥 Autores
-*   **Ricardo André (2417200)**
-*   **João Pedro (2417151)**
-*   **Disciplina:** T293-60/61 – Modelagem em Programação Matemática
-
 ---
 
-## 🎯 Objetivos do Projeto
-O algoritmo foi desenvolvido para:
-*   **Atender integralmente** à demanda de peças de diferentes tamanhos.
-*   **Minimizar** o número total de barras brutas utilizadas.
-*   **Reduzir o desperdício** (sobras) de material.
-
-O programa utiliza o solver **SCIP** (via Google OR-Tools) para garantir a busca pela solução ótima matemática.
+## 👥 Autores
+* **Ricardo André**
+* **João Pedro**
+* **Disciplina:** T293-60/61 – Modelagem em Programação Matemática
 
 ---
 
 ## 🛠️ Tecnologias e Requisitos
 
 Para rodar este projeto, você precisará de:
-*   **Python 3.13** ou superior.
-*   Bibliotecas: `ortools`, `pandas`, `numpy`.
+* **Python 3.13** ou superior.
+* Bibliotecas: `ortools`, `pandas`, `numpy`.
 
 ### Instalação das Dependências
 ```bash
@@ -38,13 +29,11 @@ Clone o repositório:
 Bash
 git clone [https://github.com/JPMendesM/AV2FModelagem.git](https://github.com/JPMendesM/AV2FModelagem.git)
 cd AV2FModelagem
+Inicie o Ambiente:
+Abra o arquivo principal no Jupyter Notebook ou VS Code:
 
-
-2.  **Inicie o Ambiente:**
-    Abra o arquivo principal no Jupyter Notebook ou VS Code:
-    ```bash
-    jupyter notebook TRABALHO_AV2_Ricardo_André_e_João_Pedro.ipynb
-    
+Bash
+jupyter notebook "TRABALHO_AV2_Ricardo_André_e_João_Pedro.ipynb"
 Entrada de Dados:
 Ao executar as células, o programa solicitará os seguintes parâmetros:
 
@@ -66,4 +55,4 @@ Métricas de Desempenho: Total de barras usadas e porcentagem de desperdício.
 📚 Referências
 Google OR-Tools Python Documentation
 
-Conceitos de Programação Linear Inteira (Cutting Stock Problem)
+Conceitos de Programação Linear Inteira e Problema de Corte de Barras
