@@ -1,47 +1,69 @@
-# Trabalho AV2 – Modelagem em Programação Matemática
+# Otimização de Corte de Barras (Cutting Stock Problem)
 
-**Autores:** Ricardo André e João Pedro  
-**Disciplina:** T293-60/61 – Modelagem em Programação Matemática  
-**Tipo de Projeto:** Otimização de Corte de Barras
+![Python](https://img.shields.io/badge/python-3.13+-blue.svg)
+![OR-Tools](https://img.shields.io/badge/Library-OR--Tools-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+Este projeto utiliza **Programação Linear Inteira (PLI)** para resolver o problema clássico de corte de barras. O sistema calcula a melhor forma de cortar barras de tamanho padrão para atender a uma demanda específica, focando na eficiência produtiva.
+
+## 👥 Autores
+*   **Ricardo André**
+*   **João Pedro**
+*   **Disciplina:** T293-60/61 – Modelagem em Programação Matemática
 
 ---
 
-## Tecnologias e Requisitos
+## 🎯 Objetivos do Projeto
+O algoritmo foi desenvolvido para:
+*   **Atender integralmente** à demanda de peças de diferentes tamanhos.
+*   **Minimizar** o número total de barras brutas utilizadas.
+*   **Reduzir o desperdício** (sobras) de material.
 
-- Python 3.13 ou superior
-- Bibliotecas Python:
-  - OR-Tools
-  - Pandas
-  - NumPy
+O programa utiliza o solver **SCIP** (via Google OR-Tools) para garantir a busca pela solução ótima matemática.
 
-Instalação rápida:
+---
 
+## 🛠️ Tecnologias e Requisitos
+
+Para rodar este projeto, você precisará de:
+*   **Python 3.13** ou superior.
+*   Bibliotecas: `ortools`, `pandas`, `numpy`.
+
+### Instalação das Dependências
 ```bash
 pip install ortools pandas numpy
-Descrição
-
-Este projeto resolve o problema de corte de barras usando Programação Linear Inteira (PLI).
-O objetivo é:
-
-Atender à demanda de peças de diferentes tamanhos;
-Minimizar o número de barras utilizadas;
-Reduzir o desperdício de material.
-
-O programa gera padrões de corte possíveis e utiliza o solver SCIP do OR-Tools para encontrar a solução ótima.
-
-Execução
+🚀 Como Executar
 Clone o repositório:
-git clone https://github.com/JPMendesM/AV2FModelagem.git
+
+Bash
+git clone [https://github.com/JPMendesM/AV2FModelagem.git](https://github.com/JPMendesM/AV2FModelagem.git)
 cd AV2FModelagem
-Execute o notebook no Jupyter:
-jupyter notebook TRABALHO_AV2_Ricardo_André_e_João_Pedro.ipynb
-Siga as instruções no notebook para informar:
-Tamanho da barra original;
-Quantidade de tipos de itens;
-Tamanho e demanda de cada item.
 
-O programa exibirá os padrões de corte gerados e a solução ótima com minimização de barras utilizadas e desperdício.
 
-Referências
-OR-Tools Python Documentation
-Conceitos de Programação Linear Inteira e Problema de Corte de Barras
+2.  **Inicie o Ambiente:**
+    Abra o arquivo principal no Jupyter Notebook ou VS Code:
+    ```bash
+    jupyter notebook TRABALHO_AV2_Ricardo_André_e_João_Pedro.ipynb
+    
+Entrada de Dados:
+Ao executar as células, o programa solicitará os seguintes parâmetros:
+
+Tamanho da barra original (bruta).
+
+Quantidade de tipos de itens (peças) necessários.
+
+Tamanho e demanda de cada item individual.
+
+📊 Saída de Dados
+Ao final da execução, o script gera:
+
+Padrões de Corte: Lista de combinações possíveis que respeitam o limite da barra.
+
+Solução Ótima: Quantidade exata de cada padrão a ser utilizado.
+
+Métricas de Desempenho: Total de barras usadas e porcentagem de desperdício.
+
+📚 Referências
+Google OR-Tools Python Documentation
+
+Conceitos de Programação Linear Inteira (Cutting Stock Problem)
