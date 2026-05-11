@@ -17,6 +17,11 @@ Este projeto utiliza **Programação Linear Inteira (PLI)** para resolver o prob
 ## 🛠️ Tecnologias e Requisitos
 
 Para rodar este projeto, você precisará de:
-* **Python 3.13** ou superior.
-* Bibliotecas: `ortools`, `pandas`, `numpy`.
 
+* **Python 3.13** ou superior
+* Bibliotecas Python:
+  - `ortools`
+  - `pandas`
+  - `numpy`
+
+**Recomendação:** rodar no Google Colab ou no VS Code utilizando a extensão do Colab para notebooks.
