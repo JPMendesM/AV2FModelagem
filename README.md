@@ -7,8 +7,8 @@
 Este projeto utiliza **Programação Linear Inteira (PLI)** para resolver o problema clássico de corte de barras. O sistema calcula a melhor forma de cortar barras de tamanho padrão para atender a uma demanda específica, focando na eficiência produtiva.
 
 ## 👥 Autores
-*   **Ricardo André**
-*   **João Pedro**
+*   **Ricardo André (2417200)**
+*   **João Pedro (2417151)**
 *   **Disciplina:** T293-60/61 – Modelagem em Programação Matemática
 
 ---
